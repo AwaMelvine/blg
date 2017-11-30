@@ -1,0 +1,83 @@
+* {
+	margin: 0px; padding: 0px;
+}
+
+
+/*******
+* STYLING FOR BANNER
+*/
+
+.banner {
+	width: 85%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #e4e4e4;
+}
+
+.banner .banner-left {
+	float: left;
+	width: 49%;
+}
+
+.banner .banner-left h1 {
+	margin-bottom: 20px;
+}
+
+.banner .banner-left p {
+	margin-bottom: 20px;
+	line-height: 1.5em;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+.banner .banner-left button {
+	padding: 10px 20px;
+	background: green;
+	color: white;
+	border: none;
+	border-radius: 5px;
+
+}
+.banner .banner-right {
+	float: right;
+	width: 49%;
+}
+
+.banner:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.navbar {
+	height: 50px;
+	width: 100%;
+	background: blue;
+	color: white;
+}
+
+.banner .banner-right form {
+	width: 50%;
+	margin: 25px auto;
+}
+.banner .banner-right form input {
+	width: 98%;
+	border: none;
+	padding: 13px 13px;
+	font-size: 1.1em;
+	margin-top: 5px;
+	border-radius: 3px;
+	display: block;
+}
+.banner .banner-right form input:focus {
+	outline: none;
+}
+.banner .banner-right form button {
+	background: violet;
+	border: none;
+	padding: 12px 20px;
+	margin-top: 8px;
+	border-radius: 5px;
+	color: white;
+}
