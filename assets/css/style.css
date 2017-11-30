@@ -60,13 +60,19 @@
 .message-div {
 	width: 85%;
 	margin: 10px auto;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	background: #dff0d8;
 	color: #3c763d;
 	border: 1px solid #3c763d;
 	font-size: 1.2em;
 	border-radius: 8px;
+	position: relative;
+}
+.message-div span {
+	position: absolute;
+	right: 15px;
+	top: 15px;
 }
 
 .banner .banner-right form {

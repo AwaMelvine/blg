@@ -6,6 +6,7 @@
 			<h2>Navbar</h2>
 		</div>
 
-		<!-- <div class="message-div">
+		<div class="message-div">
 			<p>Thanks for signing up</p>
-		</div> -->
+			<span>X</span>
+		</div>
