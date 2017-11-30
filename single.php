@@ -9,7 +9,7 @@
 	// return them as an associative array called $posts
 	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
