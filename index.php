@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 	<div class="container">
 		<div class="navbar">
 			<h2>Landing page</h2>
@@ -31,6 +32,7 @@
 			</div>
 			<div class="banner-right">
 				<form action="" >
+					<h3>Login</h3>
 					<input type="text" name="username" placeholder="Username">
 					<input type="password" name="password"  placeholder="Password"> 
 					<button type="submit">Sign in</button>

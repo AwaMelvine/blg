@@ -13,10 +13,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>BlogApp - Single</title>
+	<title>BlogApp - Login Page</title>
 	<?php include('includes/header.php') ?>		
 
-		<h2>Single page</h2>
+		<form class="register_form" action="" >
+			<h2>Login</h2>
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password"  placeholder="Password"> 
+			<button type="submit">Sign in</button>
+			<br><br>
+			<p>
+				Not yet a member? <a href="register.php">Sign up</a>
+			</p>
+		</form>
+
+
 
 	<?php include('includes/footer.php') ?>		
 

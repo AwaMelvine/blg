@@ -53,22 +53,37 @@
 .navbar {
 	height: 50px;
 	width: 100%;
-	background: blue;
+	background: #3F8742;
 	color: white;
+}
+
+.message-div {
+	width: 85%;
+	margin: 10px auto;
+	padding: 20px;
+	text-align: center;
+	background: #dff0d8;
+	color: #3c763d;
+	border: 1px solid #3c763d;
+	font-size: 1.2em;
+	border-radius: 8px;
 }
 
 .banner .banner-right form {
 	width: 50%;
+	padding: 10px;
 	margin: 25px auto;
 }
+
 .banner .banner-right form input {
-	width: 98%;
+	width: 100%;
+	display: block;
 	border: none;
 	padding: 13px 13px;
-	font-size: 1.1em;
+	font-size: 1em;
 	margin-top: 5px;
 	border-radius: 3px;
-	display: block;
+	box-sizing : border-box;
 }
 .banner .banner-right form input:focus {
 	outline: none;
@@ -80,4 +95,76 @@
 	margin-top: 8px;
 	border-radius: 5px;
 	color: white;
+}
+
+/******
+* STYLING REGISTER PAGE
+**************/
+.register_form {
+	width: 30%;
+	padding: 30px;
+	margin: 25px auto;
+	border-radius: 5px;
+	background: #e4e4e4;
+}
+.register_form h2 {
+	text-align: center;	 
+	margin-bottom: 10px;
+}
+.register_form input {
+	width: 100%;
+	display: block;
+	border: none;
+	padding: 13px 13px;
+	font-size: 1em;
+	margin-top: 5px;
+	border-radius: 3px;
+	box-sizing : border-box;
+}
+.register_form input:focus {
+	outline: none;
+}
+.register_form button {
+	background: violet;
+	border: none;
+	padding: 12px 20px;
+	margin-top: 8px;
+	border-radius: 5px;
+	color: white;	
+}
+
+/******
+* STYLING LOGIN PAGE
+**************/
+.register_form {
+	width: 30%;
+	padding: 30px;
+	margin: 25px auto;
+	border-radius: 5px;
+	background: #e4e4e4;
+}
+.register_form h2 {
+	text-align: center;	 
+	margin-bottom: 10px;
+}
+.register_form input {
+	width: 100%;
+	display: block;
+	border: none;
+	padding: 13px 13px;
+	font-size: 1em;
+	margin-top: 5px;
+	border-radius: 3px;
+	box-sizing : border-box;
+}
+.register_form input:focus {
+	outline: none;
+}
+.register_form button {
+	background: violet;
+	border: none;
+	padding: 12px 20px;
+	margin-top: 8px;
+	border-radius: 5px;
+	color: white;	
 }
