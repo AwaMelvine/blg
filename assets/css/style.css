@@ -2,9 +2,23 @@
 	margin: 0px; padding: 0px;
 }
 p {
-	line-height: 1.5em;
 	font-size: 1em;
+	line-height: 1.5em;
+	margin: 8px 0px;
 	text-align: justify;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+.btn {
+	padding: 10px 20px;
+	background: green;
+	color: white;
+	border: none;
+	border-radius: 5px;
 }
 
 /*******
@@ -36,12 +50,7 @@ p {
 }
 
 .banner .banner-left button {
-	padding: 10px 20px;
 	background: green;
-	color: white;
-	border: none;
-	border-radius: 5px;
-
 }
 .banner .banner-right {
 	float: right;
@@ -101,10 +110,7 @@ p {
 }
 .banner .banner-right form button {
 	background: violet;
-	border: none;
-	padding: 12px 20px;
 	margin-top: 8px;
-	border-radius: 5px;
 	color: white;
 }
 
@@ -182,34 +188,55 @@ p {
 /******
 * STYLING FOR POSTS
 **************/
-.posts-content {
-	width: 80%;
+.content {
+	width: 85%;
 	margin: 20px auto;
 	min-height: 200px;
-	border: 1px solid #f1f1f1;
+	border: 1px solid #838D84;
 	padding: 20px;
 
 }
 .posts-wrapper {
 	float: left;
 	width: 60%;
-	/*border: 1px solid green;*/
 }
 .sidebar {
 	float: left;
-	border: 1px solid red;
+	width: 32%;
+	margin-left: 20px;
+	padding: 10px 20px;
 }
-.posts-content:after {
+
+.categories  {
+	margin-top: 50px;
+}
+.categories h2 {
+	padding: 10px;
+	border: 1px solid #f1f1f1;
+	border-bottom: none;
+}
+.categories li a {
+	display: block;
+	padding: 8px 0px 8px 20px;
+	border: 1px solid #f1f1f1;
+}
+
+.categories li a:hover {
+	background: #f1f1f1;
+}
+
+.content:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 .post {
 	width:95%;
-	border: 1px solid #f1f1f1;
+	padding: 10px;
 	min-height: 300px;
 	margin: 20px auto;
-	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #838D84;
 }
 .post img {
 	width: 100%;

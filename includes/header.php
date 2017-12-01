@@ -10,7 +10,7 @@
 		  <li class="right"><a href="#about">About</a></li>
 		</ul>
 		
-		<div class="message-div">
+		<!-- <div class="message-div">
 			<p>Thanks for signing up</p>
 			<span>X</span>
-		</div>
+		</div> -->
