@@ -15,16 +15,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Simple Blogging application - Home</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+
+	<?php include('includes/header.php') ?>
 
 	<div class="container">
-		<div class="navbar">
-			<h2>Landing page</h2>
-		</div>
-
-		<div class="banner">
+		<!-- <div class="banner">
 			<div class="banner-left">
 				<h1>Complete Blog in PHP</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente iusto dolores distinctio mollitia, cum quaerat nulla.</p>
@@ -38,6 +33,62 @@
 					<button type="submit">Sign in</button>
 				</form>
 			</div>
+		</div>
+ -->
+		<div class="posts-content">
+
+			<div class="posts-wrapper">
+				<div class="post">
+					<img src="assets/images/reading1.jpg" alt="">
+					<h2>This is the first post</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure, ducimus dolor fuga maiores explicabo eligendi quibusdam sequi, quas architecto</p>
+					<div class="post-info">
+						<div class="author">
+							By <strong>Awa Melvine</strong> on Feb 18, 2017
+						</div>
+						<div class="readmore">
+						<button>Read more</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="post">
+					<img src="assets/images/reading1.jpg" alt="">
+					<h2>This is the first post</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure, ducimus dolor fuga maiores explicabo eligendi quibusdam sequi, quas architecto</p>
+					<div class="post-info">
+						<div class="author">
+							By <strong>Awa Melvine</strong> on Feb 18, 2017
+						</div>
+						<div class="readmore">
+						<button>Read more</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="post">
+					<img src="assets/images/reading1.jpg" alt="">
+					<h2>This is the first post</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure, ducimus dolor fuga maiores explicabo eligendi quibusdam sequi, quas architecto</p>
+					<div class="post-info">
+						<div class="author">
+							By <strong>Awa Melvine</strong> on Feb 18, 2017
+						</div>
+						<div class="readmore">
+						<button>Read more</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="sidebar" style="margin: 0px auto;">
+				<form action="" >
+					<input type="text" name="search" > 
+					<button>Search</button>
+				</form>
+			</div>
+
+
 		</div>
  
 
