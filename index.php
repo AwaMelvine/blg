@@ -18,11 +18,11 @@
 
 	<?php include('includes/header.php') ?>
 
-		<div class="banner">
+		<div class="banner clearfix">
 			<div class="banner-left">
 				<h1>Complete Blog in PHP</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente iusto dolores distinctio mollitia, cum quaerat nulla.</p>
-				<button class="btn">Get Started</button>
+				<a href="register.php" class="btn">Get Started</a>
 			</div>
 			<div class="banner-right">
 				<form action="" >
@@ -35,19 +35,19 @@
 		</div>
 
  		<!-- content -->
-		<div class="content">
+		<div class="content clearfix">
 
 			<div class="posts-wrapper">
 				<div class="post">
 					<img src="assets/images/reading1.jpg" alt="">
 					<h2>This is the first post</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure, ducimus dolor fuga maiores explicabo eligendi quibusdam sequi, quas architecto</p>
-					<div class="post-info">
+					<div class="post-info clearfix">
 						<div class="author">
 							By <strong>Awa Melvine</strong> on Feb 18, 2017
 						</div>
 						<div class="readmore">
-						<button class="btn">Read more</button>
+						<a href="single.php" class="btn">Read more</a>
 						</div>
 					</div>
 
@@ -56,12 +56,12 @@
 					<img src="assets/images/reading1.jpg" alt="">
 					<h2>This is the first post</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure, ducimus dolor fuga maiores explicabo eligendi quibusdam sequi, quas architecto</p>
-					<div class="post-info">
+					<div class="post-info clearfix">
 						<div class="author">
 							By <strong>Awa Melvine</strong> on Feb 18, 2017
 						</div>
 						<div class="readmore">
-						<button class="btn">Read more</button>
+						<a href="single.php" class="btn">Read more</a>
 						</div>
 					</div>
 

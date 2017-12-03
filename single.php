@@ -23,18 +23,17 @@
 		<div class="content"  style="border: none;">
 
 			<div class="posts-wrapper" >
-				<div class="post" style="border: none;">
-					<!-- <img src="assets/images/reading1.jpg" alt=""> -->
-					<h2>This is the first post</h2>
+				<div class="post single-page" style="border: none;">
+
+					<h2 class="page-title">This is the first post on this website</h2>
+					<div class="single-post-info">
+						<p>By <strong>Awa Melvine</strong> on Feb 18, 2017</p>
+					</div>
+					<div class="underline"></div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure, ducimus dolor fuga maiores explicabo eligendi quibusdam sequi, quas architecto</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum similique aliquam nihil id sit neque mollitia distinctio fugit esse, excepturi cumque harum culpa maiores, numquam perferendis doloribus asperiores sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni reprehenderit praesentium quidem voluptatem harum totam quod aliquid minus beatae laborum nemo, repellat rerum aut ut iusto et iure ratione.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum similique aliquam nihil id sit neque mollitia distinctio fugit esse, excepturi cumque harum culpa maiores, numquam perferendis doloribus asperiores sapiente sint.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum similique aliquam nihil id sit neque mollitia distinctio fugit esse, excepturi cumque harum culpa maiores, numquam perferendis doloribus asperiores sapiente sint.</p>
-					<div class="post-info">
-						<div class="author">
-							By <strong>Awa Melvine</strong> on Feb 18, 2017
-						</div>
-					</div>
 
 				</div>
 			</div>

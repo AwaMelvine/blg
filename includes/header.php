@@ -10,7 +10,13 @@
 		  <li class="right"><a href="#about">About</a></li>
 		</ul>
 		
-		<!-- <div class="message-div">
-			<p>Thanks for signing up</p>
-			<span>X</span>
-		</div> -->
+		<?php if (isset($_SESSION['message'])): ?>
+			<div class="message-div">
+				<p><?php echo $_SESSION['message']; ?></p>
+				<!-- unset the session variable -->
+				<?php unset($_SESSION['message']) ?>
+				<span>X</span>
+			</div>
+		<?php endif ?>
+
+

@@ -20,7 +20,7 @@
 			<h2>Login</h2>
 			<input type="text" name="username" placeholder="Username">
 			<input type="password" name="password"  placeholder="Password"> 
-			<button type="submit">Sign in</button>
+			<button type="submit" class="btn">Sign in</button>
 			<br><br>
 			<p>
 				Not yet a member? <a href="register.php">Sign up</a>
