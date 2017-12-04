@@ -1,4 +1,5 @@
 <?php 
+
 	// initialize form variables
 	$username = "Awa";
 	$email = "melvineawa@gmail.com";
@@ -6,7 +7,7 @@
 	// initialize $errors array to hold form errors
 	$errors = [];
 
-	// if the register button is pressed ...
+	// IF REGISTER BUTTON IS PRESSED
 	if (isset($_POST['register_user'])) {
 		// grab all values coming from the register form
 		$username = escape($_POST['username']);
@@ -66,13 +67,77 @@
 				// set confirm message
 				$_SESSION['message'] = "You are now logged in";
 
+				// Get the id of the last inserted user
+				// and put the user in a session array variable $_SESSION['user']
+				$user_id = mysqli_insert_id($db);
+				$_SESSION['user'] = userById($user_id);
+
 				// redirect to the index page
 				header('location: index.php');
+				exit(0);
 			}
+		}
+	}
+	// END USER REGISTRATION
+
+
+	// WHEN THE LOGIN BUTTON IS PRESSED
+	if (isset($_POST['login_btn'])) {
+		$username = escape($_POST['username']);
+		$password = escape($_POST['password']);
+
+		if (empty($username)) {
+			$error = "You must provide a username";
+			$errors['username'] = $error;
+		}
+
+		if (empty($password)) {
+			$error = "Password is required";
+			$errors['password'] = $error;
+		}
+		
+		$password = md5($password);
+		$query = "SELECT * FROM users WHERE 
+					username='$username' 
+					AND password='$password'
+					LIMIT 1
+				";
+
+		$result = mysqli_query($db, $query);
+
+		if (mysqli_num_rows($result) > 0) {
+			// set confirm message
+			$_SESSION['message'] = "You are now logged in";
+
+			// Get the id of the last inserted user
+			// and put the user in a session array variable $_SESSION['user']
+			$user_id = mysqli_fetch_assoc($result)['id'];
+
+			$_SESSION['user'] = userById($user_id);
+
+			// redirect to the index page
+			header('location: index.php');
+			exit(0);
 		}
 
 
 
+
+	}
+	// END USER LOGIN
+
+
+	function userById($id)
+	{
+		global $db;
+		$query = "SELECT * FROM users WHERE id=$id LIMIT 1";			
+		$results = mysqli_query($db, $query);
+
+		// return user in array ...
+		// ... format: ['username' => 'Awa', 'email' => 'test@awa.com', ...]
+		$user = mysqli_fetch_assoc($results); 
+
+		return $user;
 	}
 
 	function escape($value)

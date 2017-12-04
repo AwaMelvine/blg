@@ -12,9 +12,12 @@
 		
 		<?php if (isset($_SESSION['message'])): ?>
 			<div class="message-div">
-				<p><?php echo $_SESSION['message']; ?></p>
-				<!-- unset the session variable -->
-				<?php unset($_SESSION['message']) ?>
+				<?php 
+					echo $_SESSION['message']; 
+					
+					// unset the session variable 
+					unset($_SESSION['message']);
+				?>
 				<span>X</span>
 			</div>
 		<?php endif ?>

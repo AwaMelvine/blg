@@ -108,7 +108,7 @@ ul.topnav li.right {float: right;}
 }
 
 a.btn {
-	background: green;
+	background: #3B403B;
 	display: inline-block;
 }
 
@@ -213,6 +213,7 @@ a.btn {
 }
 .post img {
 	width: 100%;
+	max-height: 300px;
 }
 .post-info {
 	margin-top: 10px;
